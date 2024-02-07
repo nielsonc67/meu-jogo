@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Adivinhe o Número!</h1>
+    <p>Adivinhe um número entre <span id="minNumber">1</span> e <span id="maxNumber">50</span>:</p>
+    <input type="number" id="guessField" placeholder="Digite seu palpite">
+    <button onclick="checkGuess()">Enviar Palpite</button>
+    <p class="message" id="message"></p>
+    <p class="attempts" id="attempts"></p>
+    <button onclick="restartGame()">Reiniciar Jogo</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<video autoplay muted loop id="videoBackground">
+    <source src="imagens/fundo8.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos HTML5.
+  </video>
